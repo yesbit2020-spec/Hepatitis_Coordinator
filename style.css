@@ -112,7 +112,7 @@ body {
 .hero {
     background: linear-gradient(135deg, var(--primary) 0%, #002a55 100%);
     color: var(--white);
-    padding: 100px 0;
+    padding: 60px 0; /* 高さを抑えて情報の密度を上げる */
     text-align: center;
 }
 
@@ -265,11 +265,18 @@ body {
 /* Modal Hint style */
 .modal-tip {
     color: #94a3b8; /* Light Gray */
-    font-size: 0.9rem;
+    font-size: 1.15rem; /* 大きめに変更 */
     margin-top: 20px;
-    border-top: 1px dashed var(--border);
+    border-top: 2px dashed var(--border);
     padding-top: 20px;
-    font-weight: 500;
+    font-weight: 700;
+}
+
+.poster-thumb {
+    background-image: url('assets/poster_ambassadors.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 1 !important;
 }
 
 /* Sections */

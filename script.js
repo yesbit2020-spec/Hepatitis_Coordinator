@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeBtn = document.querySelector('.close-overlay');
     const triggers = document.querySelectorAll('.info-trigger');
 
-    const tipText = '<div class="modal-tip">詳細はこちらの先には大きくこちらに文章が入ります。</div>';
+    const tipText = '<div class="modal-tip">＊こちらに文章や画像が入ります。</div>';
 
     const details = {
         'subsidy': { title: '助成金制度の詳細', content: `<p>肝炎治療受給者証、初回精密検査費用助成などの詳細情報を掲載します。</p>${tipText}` },
