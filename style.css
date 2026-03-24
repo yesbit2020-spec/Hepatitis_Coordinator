@@ -275,13 +275,6 @@ body {
     font-weight: 700;
 }
 
-.poster-thumb {
-    background-image: url('assets/poster_ambassadors.png');
-    background-size: cover;
-    background-position: center;
-    opacity: 1 !important;
-}
-
 /* Sections */
 .section {
     padding: 80px 0;
