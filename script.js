@@ -83,19 +83,33 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.onclick = (e) => { if(e.target === overlay) closeBtn.onclick(); };
     }
 
-    // 3. News Ticker (JSON fetch)
+    // 3. News Ticker (JSON fetch & Safe Loop)
     const fetchNews = async () => {
         const ticker = document.querySelector('.news-scroll-inner');
         if (!ticker) return;
+
+        // デフォルトデータ（fetch失敗時やローカルfile://閲覧用）
+        const defaultNews = [
+            { category: "勉強会", title: "【スタッフ向け】第3回 肝炎対策・院内勉強会の案内を掲載しました。" },
+            { category: "養成研修", title: "肝炎医療コーディネーター養成研修会の募集を開始しました（締切 5/10）。" },
+            { category: "制度更新", title: "B型・C型肝炎治療受給者証の適用範囲が更新されました。" }
+        ];
+
+        let newsList = defaultNews;
+
         try {
             const res = await fetch('assets/news.json');
-            const data = await res.json();
-            const newsStr = data.news.map(n => `【${n.category}】${n.title}`).join('　/　');
-            // リピートして途切れないようにする
-            ticker.innerHTML = `<p>${newsStr}　/　${newsStr}　/　${newsStr}</p>`;
+            if (res.ok) {
+                const data = await res.json();
+                newsList = data.news;
+            }
         } catch (e) {
-            ticker.innerHTML = '<p>Latest info available via internal portal.</p>';
+            console.log("Using default news due to local file restriction or fetch error.");
         }
+
+        const newsStr = newsList.map(n => `【${n.category}】${n.title}`).join('　　/　　');
+        // シームレス・ループのために「同じ内容を2回」繋げて表示し、CSS側で半分(50%)流す
+        ticker.innerHTML = `<p>${newsStr}　　/　　${newsStr}　　/　　</p>`;
     };
     fetchNews();
 });

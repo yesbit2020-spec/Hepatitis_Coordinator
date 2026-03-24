@@ -177,19 +177,22 @@ body {
     color: #fff;
     font-size: 0.95rem;
     font-weight: 700;
-    display: flex; /* pがはみ出ても良いように */
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .news-scroll-inner p {
+    display: inline-flex;
     white-space: nowrap;
-    padding-right: 100%;
-    animation: marquee-scroll 25s linear infinite;
+    animation: marquee-scroll 40s linear infinite;
     margin: 0;
+    padding-left: 0; /* padding-right 100% は削除、JSで2倍にして50%移行させる */
 }
 
 @keyframes marquee-scroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-100%); }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* 文字列を2倍にして半分まで流すことでループに見せる */
 }
 
 /* Emergency Alert Bar (Red Line) */
@@ -514,7 +517,7 @@ body {
     position: relative;
     font-size: 4rem;
     color: var(--primary);
-    opacity: 0.5;
+    overflow: hidden; /* 画像がはみ出さないように */
 }
 
 .file-tag {
