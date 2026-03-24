@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>◯◯病院 肝炎医療コーディネーター情報局</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="YES WE 肝！" class="logo-img" onerror="this.src='https://via.placeholder.com/40x40?text=Logo'">
+                <div class="logo-text">
+                    <span class="hospital-name">◯◯病院</span>
+                    <span class="portal-name">肝炎医療コーディネーター <strong>情報局</strong></span>
+                </div>
+            </div>
+            <nav class="desktop-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#staff">For Staff</a>
+                <a href="#patients">Support</a>
+                <a href="#downloads">Downloads</a>
+                <a href="#contact" class="btn btn-outline btn-sm">Contact</a>
+            </nav>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge">MISSION: 肝がん撲滅</span>
+                    <h1 class="hero-title">命を守る、<br><span class="text-accent">肝じんな話。</span></h1>
+                    <p class="hero-desc">肝炎ウイルス検査の陽性告知から専門医への接続まで。すべてのスタッフが「コーディネーター」として動けるための情報局です。</p>
+                </div>
+            </div>
+            <!-- News Bar in Hero -->
+            <div class="container marquee-container">
+                <div class="news-ticker-pill">
+                    <div class="news-label-pill">最新情報</div>
+                    <div class="news-scroll-inner">
+                        <p>Loading records...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Contact (Quick Access) - Red Line -->
+        <div class="emergency-alert-bar">
+            <div class="container">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>医療スタッフ向け：陽性患者さんを発見したら 内線 <strong>1234</strong> (肝Coチーム直通) へ</span>
+            </div>
+        </div>
+
+        <!-- 0. DIRECTOR MESSAGE -->
+        <section id="director" class="section bg-white">
+            <div class="container">
+                <h2 class="section-heading"><span>00</span> 当院の肝炎コーディネーターの取り組みについて</h2>
+                <div class="message-layout">
+                    <div class="message-text text-large">
+                        <p>肝炎は「静かなる病気」と呼ばれ、自覚症状がないまま進行することが少なくありません。当院では、検査で陽性と判定された患者さんお一人おひとりを確実に治療へ繋げるため、多職種によるコーディネーター・チームが全力でサポートしています。</p>
+                        <p class="mt-2">「誰一人取り残さない」医療を目指し、地域の拠点病院と連携しながら、最新の治療と最適な支援を提供し続けることをお約束します。</p>
+                        <p class="mt-3 signature">〇〇病院 理事<br><strong>〇〇 〇〇</strong>（〇〇科医）</p>
+                    </div>
+                    <div class="message-photo">
+                        <div class="photo-frame">
+                            <img src="assets/doctor.png" alt="理事 〇〇 〇〇">
+                        </div>
+                        <p class="photo-caption">〇〇科医　〇〇〇〇理事</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. ABOUT -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-heading"><span>01</span> 肝Co（肝炎医療コーディネーター）とは</h2>
+                <div class="grid-2">
+                    <div class="card glass-card">
+                        <h3>連携のエコシステム</h3>
+                        <p>「予防・受検・受診・受療・フォローアップ」を支える橋渡し役。院内の多職種チームがあなたの活動をサポートします。</p>
+                        <div class="ecosystem-mini">
+                            <span>予防</span> → <span class="active">陽性発見</span> → <span>専門医</span> → <span>治療</span>
+                        </div>
+                    </div>
+                    <div class="card glass-card">
+                        <h3>患者さんのリアルな悩み</h3>
+                        <ul class="bullet-list">
+                            <li>「感染への偏見が怖くて相談できない…」</li>
+                            <li>「治療費が高額になりそうで不安…」</li>
+                        <li>「仕事とどう両立すればいい？」</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. FOR STAFF -->
+        <section id="staff" class="section bg-light">
+            <div class="container">
+                <h2 class="section-heading"><span>02</span> 【医療スタッフ向け】 院内連携体制</h2>
+                <div class="staff-tabs">
+                    <div class="tab-triggers-pill">
+                        <button class="tab-btn-pill active" data-tab="flow"><i class="fas fa-network-wired"></i> 連携フロー</button>
+                        <button class="tab-btn-pill" data-tab="roles"><i class="fas fa-user-tag"></i> 職種別ガイド</button>
+                        <button class="tab-btn-pill" data-tab="precautions"><i class="fas fa-hand-holding-medical"></i> 標準予防策</button>
+                    </div>
+                    <div id="tab-root" class="tab-body-clean">
+                        <!-- Content Injected by JS (01, 02, 03 cards) -->
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <h3 class="sub-heading">「こんな時、肝Coにご相談ください！」</h3>
+                    <div class="grid-2">
+                        <div class="card white-card">
+                            <h4 class="card-title-with-icon"><i class="fas fa-question-circle"></i> 相談のタイミング</h4>
+                            <ul class="check-list">
+                                <li>陽性だが未受診の患者さんを発見した</li>
+                                <li>治療を中断している可能性がある</li>
+                                <li>医療費に強い不安を感じている</li>
+                                <li>副作用や仕事との両立を心配している</li>
+                            </ul>
+                        </div>
+                        <div class="card white-card">
+                            <h4 class="card-title-with-icon"><i class="fas fa-user-shield"></i> 職種別の関わり</h4>
+                            <div class="role-tags-pill-list">
+                                <span class="role-tag-pill">医療事務：助成制度案内</span>
+                                <span class="role-tag-pill">技師：陽性者アラート設定</span>
+                                <span class="role-tag-pill">薬剤師：相互作用チェック</span>
+                                <span class="role-tag-pill">歯科：標準予防策の徹底</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. KNOWLEDGE -->
+        <section id="knowledge" class="section">
+            <div class="container">
+                <h2 class="section-heading"><span>03</span> KNOWLEDGE: 支援に向けた専門知識</h2>
+                <div class="grid-2">
+                    <div class="card glass-card info-trigger" data-detail="subsidy">
+                        <i class="fas fa-hand-holding-usd fa-2x color-primary"></i>
+                        <h3>医療費助成・支援制度</h3>
+                        <p>助成金申請の運用知識と具体的な案内方法。治療と仕事の両立支援について。</p>
+                        <span class="read-more">詳細を確認 <i class="fas fa-chevron-right"></i></span>
+                    </div>
+                    <div class="card glass-card info-trigger" data-detail="psychology">
+                        <i class="fas fa-brain fa-2x color-primary"></i>
+                        <h3>患者心理への理解と配慮</h3>
+                        <p>診断時のショックへの寄り添い、偏見・差別防止のためのコミュニケーション技術。</p>
+                        <span class="read-more">詳細を確認 <i class="fas fa-chevron-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 4. NETWORK -->
+        <section id="network" class="section bg-light">
+            <div class="container">
+                <h2 class="section-heading"><span>04</span> NETWORK: 地域連携・相談窓口</h2>
+                <div class="grid-2">
+                    <div class="card glass-card info-trigger" data-detail="internal-network">
+                        <i class="fas fa-network-wired fa-2x color-primary"></i>
+                        <h3>地域連携・ネットワーク</h3>
+                        <p>拠点病院リストと当院の連携室。当院の有資格者：<strong>24名</strong></p>
+                        <span class="read-more">詳細を確認 <i class="fas fa-chevron-right"></i></span>
+                    </div>
+                    <div class="card glass-card info-trigger" data-detail="local-hospitals">
+                        <i class="fas fa-hospital fa-2x color-primary"></i>
+                        <h3>連携拠点病院リスト</h3>
+                        <p>近隣の専門医・拠点病院の最新リストを確認できます。</p>
+                        <span class="read-more">詳細を確認 <i class="fas fa-chevron-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PATIENTS -->
+        <section id="patients" class="section bg-primary-light">
+            <div class="container text-center">
+                <h2 class="section-heading-center"><span>05</span> 【患者さん・ご家族向け】 当院のサポート</h2>
+                <div class="grid-3 mt-3">
+                    <div class="card white-card info-trigger" data-detail="consultation">
+                        <i class="fas fa-comments fa-2x color-primary"></i>
+                        <h3>肝疾患相談窓口</h3>
+                        <p>不安や悩み、無料・匿名で相談可能です。</p>
+                        <span class="read-more">詳細を確認 <i class="fas fa-chevron-right"></i></span>
+                    </div>
+                    <div class="card white-card info-trigger" data-detail="subsidy-patient">
+                        <i class="fas fa-yen-sign fa-2x color-primary"></i>
+                        <h3>医療費助成制度</h3>
+                        <p>公的補助の申請方法をサポートします。</p>
+                        <span class="read-more">詳細を確認 <i class="fas fa-chevron-right"></i></span>
+                    </div>
+                    <div class="card white-card info-trigger" data-detail="work-life">
+                        <i class="fas fa-briefcase fa-2x color-primary"></i>
+                        <h3>治療と仕事の両立</h3>
+                        <p>働きながら治療を続けるための就労相談。</p>
+                        <span class="read-more">詳細を確認 <i class="fas fa-chevron-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. DOWNLOADS -->
+        <section id="downloads" class="section">
+            <div class="container">
+                <h2 class="section-heading"><span>06</span> DOWNLOADS: 資材ライブラリ</h2>
+                <div class="resource-grid mt-2">
+                    <div class="resource-card">
+                        <div class="card-thumb"><i class="far fa-file-pdf"></i><span class="file-tag">PDF</span></div>
+                        <div class="card-body">
+                            <h3>肝炎陽性と言われたら</h3>
+                            <p>告知時に手渡すパンフレット。専門医受診の重要性を解説。</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="file-size">1.2 MB</span>
+                            <a href="#" class="dl-icon"><i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <div class="card-thumb"><i class="far fa-file-image"></i><span class="file-tag">PNG</span></div>
+                        <div class="card-body">
+                            <h3>院内ポスター最新版</h3>
+                            <p>待合室用のポスター。大きな内線番号を記載済み。</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="file-size">3.5 MB</span>
+                            <a href="#" class="dl-icon"><i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CONTACT -->
+        <section id="contact" class="section bg-white">
+            <div class="container">
+                <h2 class="section-heading"><span>07</span> CONTACT: お問い合わせ</h2>
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <h3>支援チーム直通</h3>
+                        <div class="ext-banner">
+                            <span class="ext-label">肝Coチーム◯◯直通（内線）</span>
+                            <span class="ext-number">1234</span>
+                        </div>
+                        <p class="text-muted"><i class="fas fa-clock"></i> 平日 9:00 〜 17:00</p>
+                    </div>
+                    <div class="contact-form-box">
+                        <form id="contact-form">
+                            <div class="form-item">
+                                <label>所属部署</label>
+                                <input type="text" placeholder="例：消化器内科" required>
+                            </div>
+                            <div class="form-item">
+                                <label>相談内容</label>
+                                <textarea rows="4" placeholder="相談の概要を入力してください"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">メッセージ送信</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h4>◯◯病院 肝炎医療コーディネーター局</h4>
+                    <p> since 2025</p>
+                </div>
+                <div class="footer-nav-list">
+                    <h5>Menu</h5>
+                    <a href="#staff">Staff Guide</a>
+                    <a href="#patients">Support</a>
+                    <a href="#downloads">Resources</a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 ◯◯病院 肝炎対策推進チーム</p>
+        </div>
+    </footer>
+
+    <!-- Overlay -->
+    <div id="detail-overlay" class="overlay">
+        <div class="overlay-content">
+            <button class="close-overlay"><i class="fas fa-times"></i></button>
+            <div id="detail-body"></div>
+        </div>
+    </div>
+
+    <!-- Bottom Nav -->
+    <nav class="mobile-nav">
+        <a href="#home"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="#staff"><i class="fas fa-user-md"></i><span>Staff</span></a>
+        <a href="#patients"><i class="fas fa-heart"></i><span>Support</span></a>
+        <a href="#contact"><i class="fas fa-phone"></i><span>Contact</span></a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
